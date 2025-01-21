@@ -1,1 +1,2 @@
-# @monorepo/shared
+# @turbostack/shared
+Shared libary

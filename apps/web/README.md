@@ -1,1 +1,2 @@
-# @monorepo/web
+# @turbostack/web
+Web application

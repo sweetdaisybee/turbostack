@@ -1,1 +1,2 @@
-# @monorepo/tsconfig
+# @turbostack/tsconfig
+Shared Typescript config libary
