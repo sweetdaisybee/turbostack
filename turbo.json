@@ -1,0 +1,42 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "dangerouslyDisablePackageManagerCheck": false,
+  "cacheDir": ".turbo/cache",
+  "ui": "tui",
+  "envMode": "strict",
+  "daemon": true,
+  
+  "tasks": {
+    "build": {
+      "interactive": false,
+      "dependsOn": ["@turbostack/shared#db:generate", "^build"],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "interactive": true,
+      "dependsOn": ["@turbostack/shared#db:generate", "^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "interactive": false,
+      "cache": false
+    },
+    "typecheck": {
+      "interactive": false,
+      "cache": false
+    },
+    "db:push": {
+      "interactive": false,
+      "cache": false
+    },
+    "db:generate": {
+      "interactive": false,
+      "cache": false
+    },
+    "db:format": {
+      "interactive": false,
+      "cache": false
+    }
+  }
+}

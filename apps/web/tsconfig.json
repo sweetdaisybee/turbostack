@@ -1,0 +1,15 @@
+{
+  "extends": "@turbostack/tsconfig/react.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@components": ["./components/index.ts"],
+      "@views": ["./views/index.ts"],
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}

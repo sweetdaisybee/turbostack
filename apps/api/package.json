@@ -1,0 +1,24 @@
+{
+  "name": "@turbostack/api",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "private": true,
+  "author": "sweetdaisybee",
+  "packageManager": "pnpm@9.15.4",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsx ./src/index.ts",
+    "clean": "rimraf dist .tsbuildinfo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@turbostack/shared": "workspace:*",
+    "@turbostack/tsconfig": "workspace:*",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
+  }
+}

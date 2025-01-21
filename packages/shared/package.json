@@ -1,0 +1,28 @@
+{
+  "name": "@turbostack/shared",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "private": true,
+  "author": "sweetdaisybee",
+  "packageManager": "pnpm@9.15.4",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist/**"],
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist .tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "db:format": "prisma format",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1"
+  },
+  "devDependencies": {
+    "@turbostack/tsconfig": "workspace:*",
+    "prisma": "^6.2.1"
+  }
+}

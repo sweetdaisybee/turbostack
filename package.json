@@ -1,0 +1,23 @@
+{
+  "name": "turbostack",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "private": true,
+  "author": "sweetdaisybee",
+  "packageManager": "pnpm@9.15.4",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "clean": "turbo run clean",
+    "typecheck": "turbo run typecheck",
+    "db:format": "turbo run db:format",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3"
+  }
+}

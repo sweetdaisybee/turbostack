@@ -1,0 +1,39 @@
+{
+  "name": "@turbostack/web",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "private": true,
+  "author": "sweetdaisybee",
+  "packageManager": "pnpm@9.15.4",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "clean": "rimraf dist .tsbuildinfo",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@turbostack/shared": "workspace:*",
+    "@turbostack/tsconfig": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@types/webpack": "^5.28.5",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.5.1",
+    "postcss-loader": "^8.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.17",
+    "ts-loader": "^9.5.2",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  }
+}

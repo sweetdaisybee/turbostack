@@ -1,0 +1,18 @@
+{
+  "extends": "@turbostack/tsconfig/node.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@configs": ["./configs/index.js"],
+      "@routesV1": ["./routes/v1/index.js"],
+      "@controllersV1": ["./controllers/v1/index.js"],
+      "@libV1": ["./lib/v1/index.js"],
+      "@typesV1": ["./types/v1/index.js"],
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}
